@@ -31,7 +31,7 @@ class YzModelTest {
         yz.start()
         yz.roll()
         yz.dice.forEach { die ->
-            assertThat(die.value).isNotEqualTo(0)
+            assertThat(die.pips).matches { it in 1..6 }
         }
     }
 

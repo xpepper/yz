@@ -1,9 +1,11 @@
 package org.geepawhill.yz
 
+import javafx.beans.property.ReadOnlyIntegerProperty
 import javafx.beans.property.ReadOnlyIntegerWrapper
 
 class DieModel {
     private val pipsProperty = ReadOnlyIntegerWrapper(UNKNOWN)
+    val pipsReadOnly: ReadOnlyIntegerProperty = pipsProperty.readOnlyProperty
 
     var pips: Int
         get() = pipsProperty.value

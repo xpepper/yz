@@ -14,7 +14,7 @@ class YzView : View() {
                 enableWhen(model.canRoll)
                 action { model.roll() }
             }
-            model.dice.forEach { label(it) }
+            model.dice.forEach { label(it.pipsReadOnly) }
         }
     }
 }
