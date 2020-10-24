@@ -8,15 +8,11 @@ class YzView : View() {
     override val root = pane {
         hbox {
             button("Start") {
-                action {
-                    model.start()
-                }
+                action { model.start() }
             }
             button("Roll") {
                 enableWhen(model.canRoll)
-                action {
-                    model.roll()
-                }
+                action { model.roll() }
             }
             model.dice.forEach { label(it) }
         }
