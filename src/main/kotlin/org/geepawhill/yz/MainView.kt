@@ -18,11 +18,7 @@ class MainView : View() {
                     model.roll()
                 }
             }
-            label(model.dice[0])
-            label(model.dice[1])
-            label(model.dice[2])
-            label(model.dice[3])
-            label(model.dice[4])
+            model.dice.forEach { label(it) }
         }
     }
 }
