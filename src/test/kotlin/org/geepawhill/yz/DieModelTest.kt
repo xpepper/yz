@@ -5,7 +5,7 @@ import org.geepawhill.yz.DieModel.Companion.UNKNOWN
 import org.junit.jupiter.api.Test
 
 class DieModelTest {
-    val model = DieModel()
+    private val model = DieModel()
 
     @Test
     fun `starts with UNKNOWN pips`() {
